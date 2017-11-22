@@ -1,0 +1,48 @@
+﻿
+@model TrabalhoIHC.Models.Usuario
+
+@{
+    ViewBag.Title = "Logar";
+}
+
+<style>
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style>
+<br /><br />
+<h2>Bem vindo a area do Usuário</h2>
+<br /><br />
+
+<div class="form-signin-heading">
+
+    <form action="Logar" method="post" class="form-control-static">
+        <label>Email</label>
+        <input name="email" type="email" id="inputEmail" class="form-control" placeholder="voce@exemplo.com" required autofocus><br />
+        <label>Senha</label>
+        <input name="senha" type="password" id="inputPassword" class="form-control" placeholder="********" required>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="remember-me"> Lembre de mim
+            </label>
+        </div>
+        <input type="submit" value="Salvar" class="btn btn-success" />
+    </form>
+    <p><a href="~/Usuario/CadUsuario">Não tenho cadastro</a></p>
+
+</div>

@@ -14,5 +14,18 @@ namespace TrabalhoIHC.Controllers
             ViewBag.Message = "Cadastro de Usuários";
             return View();
         }
+
+        // GET: Usuario
+        public ActionResult Logar()
+        {
+            ViewBag.Message = "Logar";
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Logar(string email, string senha)
+        {
+
+            return RedirectToAction("ListarPet", "Pet");
+        }
     }
 }

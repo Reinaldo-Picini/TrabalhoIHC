@@ -134,6 +134,7 @@
     <Content Include="Views\Pet\ListarPet.cshtml" />
     <Content Include="Views\Pet\Index.cshtml" />
     <Content Include="Views\Usuario\CadUsuario.cshtml" />
+    <Content Include="Views\Usuario\Logar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
