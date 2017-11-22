@@ -94,14 +94,16 @@
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Imagens\Beagles.jpg" />
-    <Content Include="Imagens\Buldogue.jpg" />
-    <Content Include="Imagens\Golden.jpg" />
-    <Content Include="Imagens\Labrador.jpg" />
-    <Content Include="Imagens\Mastim.jpg" />
-    <Content Include="Imagens\PAlemao.jpg" />
-    <Content Include="Imagens\Poodle.jpg" />
-    <Content Include="Imagens\Rottweiler.jpg" />
+    <Content Include="Imagens\Boxer.jpg" />
+    <Content Include="Imagens\BullDog.jpg" />
+    <Content Include="Imagens\Chow-Chow.jpg" />
+    <Content Include="Imagens\Doberman.jpg" />
+    <Content Include="Imagens\malamutedoalasca.jpg" />
+    <Content Include="Imagens\pinterestdoberman.jpg" />
+    <Content Include="Imagens\poodle.jpg" />
+    <Content Include="Imagens\Saluki.jpg" />
+    <Content Include="Imagens\SaoBernardo.jpg" />
+    <Content Include="Imagens\Shihtzu.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -112,12 +114,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\CadPedController.cs" />
+    <Compile Include="Controllers\PetController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\CadPet.cs" />
-    <Compile Include="Models\CadUsuario.cs" />
+    <Compile Include="Models\Pet.cs" />
+    <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -125,11 +127,11 @@
     <Content Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\CadPed\ListarPet.cshtml" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Pet\ListarPet.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
