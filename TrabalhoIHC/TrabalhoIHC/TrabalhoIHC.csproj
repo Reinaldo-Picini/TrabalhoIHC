@@ -135,6 +135,8 @@
     <Content Include="Views\Pet\Index.cshtml" />
     <Content Include="Views\Usuario\CadUsuario.cshtml" />
     <Content Include="Views\Usuario\Logar.cshtml" />
+    <Content Include="Views\Home\Ajuda.cshtml" />
+    <Content Include="Views\Pet\CadPet.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -144,7 +146,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Home\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
