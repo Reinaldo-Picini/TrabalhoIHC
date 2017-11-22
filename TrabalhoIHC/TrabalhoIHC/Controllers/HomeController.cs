@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace MeetingsPets_Original.Controllers
+namespace TrabalhoIHC.Controllers
 {
     public class HomeController : Controller
     {
