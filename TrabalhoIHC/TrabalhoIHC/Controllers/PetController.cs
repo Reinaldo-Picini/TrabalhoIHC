@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MeetingsPets_Original.Repositorio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -65,8 +66,8 @@ namespace TrabalhoIHC.Controllers
                 petDoBanco.Raca = objPet.Raca;
                 petDoBanco.Idade = objPet.Idade;
                 petDoBanco.Sexo = objPet.Sexo;
-                petDoBanco.NomeDono = objPet.NomeDono;
-                petDoBanco.Endereco = objPet.Endereco;
+                //petDoBanco.NomeDono = objPet.NomeDono;
+                //petDoBanco.Endereco = objPet.Endereco;
 
                 return RedirectToAction("Listar");
 
@@ -88,7 +89,7 @@ namespace TrabalhoIHC.Controllers
         {
             Pet petBanco = PetReposit.Pet.First(p => p.PetId == objPets.PetId);
 
-            PetReposit.Pet.Remove(petBanco);
+            PetReposit.Pet.Remove(PetReposit);
 
             return RedirectToAction("Listar");
 
