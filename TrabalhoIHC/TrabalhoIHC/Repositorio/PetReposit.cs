@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using MeetingsPets_Original.Models;
+using MeetingsPets_Original.Repositorio;
 
 namespace MeetingsPets_Original.Repositorio
 {
     public class PetReposit
     {
-        public static IList<Pet> Pet = new List<Pet>();
+        public static IList<PetReposit> Pet = new List<PetReposit>();
 
     }
 }
