@@ -132,7 +132,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Pet\ListarPet.cshtml" />
-    <Content Include="Views\Pet\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Usuario\CadUsuario.cshtml" />
     <Content Include="Views\Usuario\Logar.cshtml" />
     <Content Include="Views\Home\Ajuda.cshtml" />

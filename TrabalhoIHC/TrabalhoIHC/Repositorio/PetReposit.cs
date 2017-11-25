@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using MeetingsPets_Original.Repositorio;
 
-namespace MeetingsPets_Original.Repositorio
+namespace TrabalhoIHC.Repositorio
 {
     public class PetReposit
     {

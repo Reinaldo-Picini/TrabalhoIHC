@@ -17,5 +17,17 @@ namespace TrabalhoIHC.Models
         public string Sexo { get; set; }
         public string Temperamento { get; set; }
         public string Descricao { get; set; }
+
+        public static void Add(Pet objPets)
+        {
+            throw new NotImplementedException();
+        }
+
+        
+
+        public static Pet First(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
