@@ -5,231 +5,196 @@
 }
 
 <style>
-    input[type=text] {
-        width: 170px;
-        box-sizing: border-box;
-        border: 2px solid #ccc;
-        border-radius: 4px;
-        font-size: 16px;
-        background-color: white;
-        background-image: url('searchicon.png');
-        background-position: 10px 10px;
-        background-repeat: no-repeat;
-        padding: 12px 20px 12px 40px;
-        -webkit-transition: width 0.4s ease-in-out;
-        transition: width 0.4s ease-in-out;
-    }
-
-        input[type=text]:focus {
-            width: 100%;
+        * {
+            box-sizing: border-box;
         }
 
-    body {
-        background-color: green;
-    }
-
-    img {
-        border-radius: 8px;
-    }
-
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        background-color: #f1f1f1;
-        padding: 20px;
-        font-family: Arial;
-    }
-
-    /* Center website */
-    .main {
-        max-width: 1000px;
-        margin: auto;
-    }
-
-    h1 {
-        font-size: 50px;
-        word-break: break-all;
-    }
-
-    .row {
-        margin: 10px -16px;
-    }
-
-        /* Add padding BETWEEN each column */
-        .row,
-        .row > .column {
-            padding: 8px;
+        body {
+            background-color: #f1f1f1;
+            padding: 20px;
+            font-family: Arial;
         }
 
-    /* Create three equal columns that floats next to each other */
-    .column {
-        float: left;
-        width: 33.33%;
-        display: none; /* Hide all elements by default */
-    }
+        /* Center website */
+        .main {
+            max-width: 1000px;
+            margin: auto;
+        }
 
-    /* Clear floats after rows */
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+        h1 {
+            font-size: 50px;
+            word-break: break-all;
+        }
 
-    /* Content */
-    .content {
-        background-color: white;
-        padding: 10px;
-    }
+        .row {
+            margin: 10px -16px;
+        }
 
-    /* The "show" class is added to the filtered elements */
-    .show {
-        display: block;
-    }
-</style>
-
-
-</script>
-<!-- MAIN (Center website) -->
-
-<br /><br /><br />
-<h1 class="text-center">Encontre seu parceiro</h1>
-
-<form class="navbar-form navbar-left">
-    <div class="form-group">
-        <input type="text" class="form-control" placeholder="Buscar Pet...">
-    </div>
-    <button type="submit" class="btn btn-success">Buscar</button>
-</form>
-<br />
-<h3>Filtrar Busca</h3>
-
-<input type="radio" onclick="filterSelection('all')" name="category" checked> Mais Procurados
-<input type="radio" onclick="filterSelection('nature')" name="category"> Posts Recentes
-<input type="radio" onclick="filterSelection('cars')" name="category"> Mais Antigos
-<input type="radio" onclick="filterSelection('people')" name="category"> Está no CIO
-
-<!-- Portfolio Gallery Grid -->
-<div class="row">
-    <div class="column nature">
-        <div class="content">
-            <img src="~/Imagens/SaoBernardo.jpg" alt="Car" style="width:100%">
-            <h4>Sao Bernardo</h4>
-            <p>2 anos</p>
-            <input type="submit" value="Contato: 7777-7777" class="btn btn-primary" />
-        </div>
-    </div>
-    <div class="column nature">
-        <div class="content">
-            <img src="~/Imagens/BullDog.jpg" alt="Lights" style="width:100%">
-            <h4>Bull Dog</h4>
-            <p>1,5 anos</p>
-            <input type="submit" value="Contato: 5555-5555" class="btn btn-primary" />
-        </div>
-    </div>
-    <div class="column nature">
-        <div class="content">
-            <img src="~/Imagens/Chow-Chow.jpg" alt="Nature" style="width:100%">
-            <h4>Chow Chow</h4>
-            <p>2 anos.</p>
-            <input type="submit" value="Contato: 3333-3333" class="btn btn-primary" />
-        </div>
-    </div>
-    <br /><br />
-    <div class="column cars">
-        <div class="content">
-            <img src="~/Imagens/poodle.jpg" alt="Car" style="width:100%">
-            <h4>Poodle</h4>
-            <p>2 anos</p>
-            <input type="submit" value="Contato: 2222-2222" class="btn btn-primary" />
-        </div>
-    </div>
-    <div class="column cars">
-        <div class="content">
-            <img src="~/Imagens/Saluki.jpg" alt="Car" style="width:100%">
-            <h4>Saluki</h4>
-            <p>1 ano</p>
-            <input type="submit" value="Contato: 1111-1111" class="btn btn-primary" />
-        </div>
-    </div>
-    <div class="column cars">
-        <div class="content">
-            <img src="~/Imagens/Boxer.jpg" alt="Car" style="width:100%">
-            <h4>Boxer</h4>
-            <p>3 anos</p>
-            <input type="submit" value="Contato: 4444-4444" class="btn btn-primary" />
-        </div>
-    </div>
-
-    <div class="column people">
-        <div class="content">
-            <img src="~/Imagens/Shihtzu.jpg" alt="Car" style="width:100%">
-            <h4>Shih tzu</h4>
-            <p>3 anos</p>
-            <input type="submit" value="Contato: 6666-6666" class="btn btn-primary" />
-        </div>
-    </div>
-    <div class="column people">
-        <div class="content">
-            <img src="~/Imagens/malamutedoalasca.jpg" alt="Car" style="width:100%">
-            <h4>Malamute do Alasca</h4>
-            <p>3 anos</p>
-            <input type="submit" value="Contato: 6666-6666" class="btn btn-primary" />
-        </div>
-    </div>
-    <div class="column people">
-        <div class="content">
-            <img src="~/Imagens/pinterestdoberman.jpg" alt="Mountains" style="width:100%">
-            <h4>Doberman</h4>
-            <p>2 anos</p>
-            <input type="submit" value="Contato: 9999-9999" class="btn btn-primary" />
-        </div>
-
-    </div>
-</div>
-<!-- END GRID -->
-
-
-<script>
-        filterSelection("all")
-        function filterSelection(c) {
-            var x, i;
-            x = document.getElementsByClassName("column");
-            if (c == "all") c = "";
-            for (i = 0; i < x.length; i++) {
-                w3RemoveClass(x[i], "show");
-                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            /* Add padding BETWEEN each column */
+            .row,
+            .row > .column {
+                padding: 8px;
             }
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 33.33%;
+            display: none; /* Hide all elements by default */
         }
 
-        function w3AddClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
-            }
+        /* Clear floats after rows */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
         }
 
-        function w3RemoveClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                while (arr1.indexOf(arr2[i]) > -1) {
-                    arr1.splice(arr1.indexOf(arr2[i]), 1);
-                }
-            }
-            element.className = arr1.join(" ");
+        /* Content */
+        .content {
+            background-color: white;
+            padding: 10px;
         }
-</script>
+
+        /* The "show" class is added to the filtered elements */
+        .show {
+            display: block;
+        }
+    </style>
 
 
+    <!-- MAIN (Center website) -->
 
-@{
-    ViewBag.Title = "ListarPet";
+        <br /><br /><br />
+        <h1 class="text-center">Encontre seu parceiro</h1>
+
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Buscar Pet...">
+                </div>
+                <button type="submit" class="btn btn-success">Buscar</button>
+            </form> 
+        <br /><br />
+        
+
+        <h2>Filtrar</h2>
+
+            <input type="radio" onclick="filterSelection('all')" name="category" checked> Mais Buscados
+            <input type="radio" onclick="filterSelection('nature')" name="category"> Posts Recentes
+            <input type="radio" onclick="filterSelection('cars')" name="category"> Mais Antigos
+            <input type="radio" onclick="filterSelection('people')" name="category"> Está no CIO
+
+            <!-- Portfolio Gallery Grid -->
+            <div class="row">
+                <div class="column nature">
+                    <div class="content">
+                        <img src="~/Imagens/Rottweiler.jpg" alt="Mountains" style="width:100%">
+                        <h4>Raca: Rottweiler</h4>
+                        <p>Idade: 1 ano</p>
+                        <p>>Sexo: Macho</p>
+                        <input type="submit" value="Contato: Relinton 9999-9999" class="btn btn-primary" />
+                    </div>
+                </div>
+                <div class="column nature">
+                    <div class="content">
+                        <img src="~/Imagens/Labrador.jpg" alt="Lights" style="width:100%">
+                        <h4>Raça: Labrador</h4>
+                        <p>Idade: 1,5 anos</p>
+                        <p>Sexo: Femea</p>
+                        <input type="submit" value="Contato: Edmilson 5555-5555" class="btn btn-primary" />
+                    </div>
+                </div>
+                <div class="column nature">
+                    <div class="content">
+                        <img src="~/Imagens/Golden.jpg" alt="Nature" style="width:100%">
+                        <h4>Raça: Golden</h4>
+                        <p>Idade: 2 anos.</p>
+                        <p>Sexo: Femea</p>
+                        <input type="submit" value="Contato: José 3333-3333" class="btn btn-primary" />
+                    </div>
+                </div>
+
+                <div class="column cars">
+                    <div class="content">
+                        <img src="~/Imagens/Beagles.jpg" alt="Car" style="width:100%">
+                        <h4>Raça: Beagles</h4>
+                        <p>Idade: 2 anos</p>
+                        <p>Sexo: Macho</p>
+                        <input type="submit" value="Contato: Josué 2222-2222" class="btn btn-primary" />
+                    </div>
+                </div>
+                <div class="column cars">
+                    <div class="content">
+                        <img src="~/Imagens/Buldogue.jpg" alt="Car" style="width:100%">
+                        <h4>Raça: Buldogue</h4>
+                        <p>Idade: 1 ano</p>
+                        <p>Sexo: Macho</p>
+                        <input type="submit" value="Contato: Elton 1111-1111" class="btn btn-primary" />
+                    </div>
+                </div>
+                <div class="column cars">
+                    <div class="content">
+                        <img src="~/Imagens/Mastim.jpg" alt="Car" style="width:100%">
+                        <h4>Raça: Mastim</h4>
+                        <p>Idade: 3 anos</p>
+                        <p>Sexo: Femea</p>
+                        <input type="submit" value="Contato: Maria 4444-4444" class="btn btn-primary" />
+                    </div>
+                </div>
+
+                <div class="column people">
+                    <div class="content">
+                        <img src="~/Imagens/PAlemao.jpg" alt="Car" style="width:100%">
+                        <h4>Raça: Pastor-Alemão</h4>
+                        <p>Idade: 3 anos</p>
+                        <p>Sexo: Macho</p>
+                        <input type="submit" value="Contato: Francisco 6666-6666" class="btn btn-primary" />
+                    </div>
+                </div>
+                <div class="column people">
+                    <div class="content">
+                        <img src="~/Imagens/Poodle.jpg" alt="Car" style="width:100%">
+                        <h4>Raça: Poodle</h4>
+                        <p>Idade: 2 anos</p>
+                        <p>Sexo: Femea</p>
+                        <input type="submit" value="Contato: Gaúcho 7777-7777" class="btn btn-primary" />
+                    </div>
+                </div>
+            </div>
+            <!-- END GRID -->
+
+
+    <script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
 }
 
-<h2>ListarPet</h2>
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+    </script>
 
