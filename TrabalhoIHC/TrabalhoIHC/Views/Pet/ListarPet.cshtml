@@ -111,84 +111,402 @@
 <input type="radio" onclick="filterSelection('people')" name="category"> Está no CIO
 
 <!-- Portfolio Gallery Grid -->
+<!--Bernardo com Modal-->
 <div class="row">
     <div class="column nature">
         <div class="content">
-            <img src="~/Imagens/SaoBernardo.jpg" alt="Car" style="width:100%">
+            <img src="~/Imagens/SaoBernardo.jpg" alt="Car" width="100%">
             <h4>Sao Bernardo</h4>
             <p>2 anos</p>
-            <input type="submit" value="Contato: 7777-7777" class="btn btn-primary" />
+            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Detalhes do Anúncio</button>
         </div>
     </div>
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                    <h4 class="modal-title text-center" style="color: blue">Marque um encontro! é Grátuito :)</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="content">
+                        <img src="~/Imagens/SaoBernardo.jpg" alt="Car" style="width:100%">
+                        <div class="container">
+                            <h4>Nome do Cão: Bob</h4>
+
+                            <h4>Raça: São Bernardo</h4>
+                            <h4>Idade: 7 anos</h4>
+                            <h4>Vacina: Sim</h4>
+                            <h4>Porte: Grande</h4>
+                            <h4>Sexo: Macho</h4>
+                            <h4>Temperamento: Calmo</h4>
+                            <h4>Descrição: O bicho da Goiaba rsrs.</h4>
+                            <h4>Nome do Dono: Breatinispeche</h4>
+                            <h4>Telefone: 1111-1111</h4>
+                            <h4>Endereço: Rua Salgado do Baum</h4>
+                            <h4><iframe src="~/Imagens/Maps.png" frameborder="0" allowfullscreen style="width:100%"></iframe></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--Bulldog com Modal-->
     <div class="column nature">
         <div class="content">
             <img src="~/Imagens/BullDog.jpg" alt="Lights" style="width:100%">
             <h4>Bull Dog</h4>
             <p>1,5 anos</p>
-            <input type="submit" value="Contato: 5555-5555" class="btn btn-primary" />
+            <button class="btn btn-primary" data-toggle="modal" data-target="#myModall">Detalhes do Anúncio</button>
         </div>
     </div>
+    <div class="modal fade" id="myModall">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                    <h4 class="modal-title text-center" style="color: blue">Marque um encontro! é Grátuito :)</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="content">
+                        <img src="~/Imagens/BullDog.jpg" alt="Car" style="width:100%">
+                        <h4>Nome do Cão: Bred Peacher</h4>
+                        <h4>Raça: São Bernardo</h4>
+                        <h4>Idade: 7 anos</h4>
+                        <h4>Vacina: Sim</h4>
+                        <h4>Porte: Grande</h4>
+                        <h4>Sexo: Macho</h4>
+                        <h4>Temperamento: Calmo</h4>
+                        <h4>Descrição: O bicho da Goiaba rsrs.</h4>
+                        <h4>Nome do Dono: Breatinispeche</h4>
+                        <h4>Telefone: 2222-2222</h4>
+                        <h4>Endereço: Rua Piquia</h4>
+                        <h4><iframe src="~/Imagens/Maps.png" frameborder="0" allowfullscreen style="width:100%"></iframe></h4>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--Chow com Modal-->
     <div class="column nature">
         <div class="content">
             <img src="~/Imagens/Chow-Chow.jpg" alt="Nature" style="width:100%">
             <h4>Chow Chow</h4>
             <p>2 anos.</p>
-            <input type="submit" value="Contato: 3333-3333" class="btn btn-primary" />
+            <button class="btn btn-primary" data-toggle="modal" data-target="#myModalll">Detalhes do Anúncio</button>
         </div>
     </div>
-    <br /><br />
+    <div class="modal fade" id="myModalll">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                    <h4 class="modal-title text-center" style="color: blue">Marque um encontro! é Grátuito :)</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="content">
+                        <img src="~/Imagens/Chow-Chow.jpg" alt="Car" style="width:100%">
+                        <h4>Nome do Cão: Salsichão</h4>
+                        <h4>Raça: São Bernardo</h4>
+                        <h4>Idade: 4 anos</h4>
+                        <h4>Vacina: Sim</h4>
+                        <h4>Porte: Grande</h4>
+                        <h4>Sexo: Macho</h4>
+                        <h4>Temperamento: Calmo</h4>
+                        <h4>Descrição: Confiante e determinado rsrs.</h4>
+                        <h4>Nome do Dono: Lima</h4>
+                        <h4>Telefone: 3333-3333</h4>
+                        <h4>Endereço: Rua Cand Crush</h4>
+                        <h4><iframe src="~/Imagens/Maps.png" frameborder="0" allowfullscreen style="width:100%"></iframe></h4>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--Poodle com Modal-->
     <div class="column cars">
         <div class="content">
             <img src="~/Imagens/poodle.jpg" alt="Car" style="width:100%">
             <h4>Poodle</h4>
             <p>2 anos</p>
-            <input type="submit" value="Contato: 2222-2222" class="btn btn-primary" />
+            <button class="btn btn-primary" data-toggle="modal" data-target="#myModallll">Detalhes do Anúncio</button>
         </div>
     </div>
+    <div class="modal fade" id="myModallll">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                    <h4 class="modal-title text-center" style="color: blue">Marque um encontro! é Grátuito :)</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="content">
+                        <img src="~/Imagens/poodle.jpg" alt="Car" style="width:100%">
+                        <h4>Nome do Cão: BiroBiro</h4>
+                        <h4>Raça: São Bernardo</h4>
+                        <h4>Idade: 5 anos</h4>
+                        <h4>Vacina: Sim</h4>
+                        <h4>Porte: Grande</h4>
+                        <h4>Sexo: Femea</h4>
+                        <h4>Temperamento: Calmo</h4>
+                        <h4>Descrição: Já pariu 5 vezes, mas ta tudo sobre controle, pronta para a próxima. rsrs...</h4>
+                        <h4>Nome do Dono: Filósofo</h4>
+                        <h4>Telefone: 4444-4444</h4>
+                        <h4>Endereço: Rua Pedro da Rocha</h4>
+                        <h4><iframe src="~/Imagens/Maps.png" frameborder="0" allowfullscreen style="width:100%"></iframe></h4>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Saluki com Modal-->
     <div class="column cars">
         <div class="content">
             <img src="~/Imagens/Saluki.jpg" alt="Car" style="width:100%">
             <h4>Saluki</h4>
             <p>1 ano</p>
-            <input type="submit" value="Contato: 1111-1111" class="btn btn-primary" />
+            <button class="btn btn-primary" data-toggle="modal" data-target="#Modal">Detalhes do Anúncio</button>
         </div>
     </div>
+    <div class="modal fade" id="Modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                    <h4 class="modal-title text-center" style="color: blue">Marque um encontro! é Grátuito :)</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="content">
+                        <img src="~/Imagens/Saluki.jpg" alt="Car" style="width:100%">
+                        <h4>Nome do Cão: Tó-Tó</h4>
+                        <h4>Raça: São Bernardo</h4>
+                        <h4>Idade: 7 anos</h4>
+                        <h4>Vacina: Sim</h4>
+                        <h4>Porte: Grande</h4>
+                        <h4>Sexo: Macho</h4>
+                        <h4>Temperamento: Calmo</h4>
+                        <h4>Descrição: Sou Bruto. rsrs...</h4>
+                        <h4>Nome do Dono: Relinton</h4>
+                        <h4>Telefone: 8888-8888</h4>
+                        <h4>Endereço: Rua Caqui</h4>
+                        <h4><iframe src="~/Imagens/Maps.png" frameborder="0" allowfullscreen style="width:100%"></iframe></h4>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--Boxer com Modal-->
     <div class="column cars">
         <div class="content">
             <img src="~/Imagens/Boxer.jpg" alt="Car" style="width:100%">
             <h4>Boxer</h4>
             <p>3 anos</p>
-            <input type="submit" value="Contato: 4444-4444" class="btn btn-primary" />
+            <button class="btn btn-primary" data-toggle="modal" data-target="#Modall">Detalhes do Anúncio</button>
+        </div>
+    </div>
+    <div class="modal fade" id="Modall">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                    <h4 class="modal-title text-center" style="color: blue">Marque um encontro! é Grátuito :)</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="content">
+                        <img src="~/Imagens/Boxer.jpg" alt="Car" style="width:100%">
+                        <h4>Nome do Cão: Traicoeiro</h4>
+                        <h4>Raça: São Bernardo</h4>
+                        <h4>Idade: 7 anos</h4>
+                        <h4>Vacina: Sim</h4>
+                        <h4>Porte: Grande</h4>
+                        <h4>Sexo: Macho</h4>
+                        <h4>Temperamento: Calmo</h4>
+                        <h4>Descrição: O bicho da Goiaba rsrs.</h4>
+                        <h4>Nome do Dono: José Roberto Carlos</h4>
+                        <h4>Telefone: 1111-1111</h4>
+                        <h4>Endereço: Rua Belo Monte</h4>
+                        <h4><iframe src="~/Imagens/Maps.png" frameborder="0" allowfullscreen style="width:100%"></iframe></h4>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                </div>
+            </div>
         </div>
     </div>
 
+
+
+
+    <!--Shith Tzu-->
     <div class="column people">
         <div class="content">
             <img src="~/Imagens/Shihtzu.jpg" alt="Car" style="width:100%">
             <h4>Shih tzu</h4>
             <p>3 anos</p>
-            <input type="submit" value="Contato: 6666-6666" class="btn btn-primary" />
+            <button class="btn btn-primary" data-toggle="modal" data-target="#Modallll">Detalhes do Anúncio</button>
         </div>
     </div>
+    <div class="modal fade" id="Modallll">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                    <h4 class="modal-title text-center" style="color: blue">Marque um encontro! é Grátuito :)</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="content">
+                        <img src="~/Imagens/Shihtzu.jpg" alt="Car" style="width:100%">
+                        <h4>Nome do Cão: Mocinha</h4>
+                        <h4>Raça: São Bernardo</h4>
+                        <h4>Idade: 7 anos</h4>
+                        <h4>Vacina: Sim</h4>
+                        <h4>Porte: Grande</h4>
+                        <h4>Sexo: Femea</h4>
+                        <h4>Temperamento: Calmo</h4>
+                        <h4>Descrição: Nunca pariu, mas tem vontade. rsrs.</h4>
+                        <h4>Nome do Dono: Elton Ereira</h4>
+                        <h4>Telefone: 6666-6666</h4>
+                        <h4>Endereço: Rua Gente da gente</h4>
+                        <h4><iframe src="~/Imagens/Maps.png" frameborder="0" allowfullscreen style="width:100%"></iframe></h4>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--Malamute com Modal-->
     <div class="column people">
         <div class="content">
             <img src="~/Imagens/malamutedoalasca.jpg" alt="Car" style="width:100%">
             <h4>Malamute do Alasca</h4>
             <p>3 anos</p>
-            <input type="submit" value="Contato: 6666-6666" class="btn btn-primary" />
+            <button class="btn btn-primary" data-toggle="modal" data-target="#Modalllll">Detalhes do Anúncio</button>
         </div>
     </div>
+    <div class="modal fade" id="Modalllll">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                    <h4 class="modal-title text-center" style="color: blue">Marque um encontro! é Grátuito :)</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="content">
+                        <img src="~/Imagens/malamutedoalasca.jpg" alt="Car" style="width:100%">
+                        <h4>Nome do Cão: Suculento</h4>
+                        <h4>Raça: São Bernardo</h4>
+                        <h4>Idade: 7 anos</h4>
+                        <h4>Vacina: Sim</h4>
+                        <h4>Porte: Grande</h4>
+                        <h4>Sexo: Macho</h4>
+                        <h4>Temperamento: Calmo</h4>
+                        <h4>Descrição: Irresistível rsrs.</h4>
+                        <h4>Nome do Dono: José Joshua</h4>
+                        <h4>Telefone: 1111-1111</h4>
+                        <h4>Endereço: Rua Cris Brown</h4>
+                        <h4><iframe src="~/Imagens/Maps.png" frameborder="0" allowfullscreen style="width:100%"></iframe></h4>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Doberman com Modal-->
     <div class="column people">
         <div class="content">
             <img src="~/Imagens/pinterestdoberman.jpg" alt="Mountains" style="width:100%">
             <h4>Doberman</h4>
             <p>2 anos</p>
-            <input type="submit" value="Contato: 9999-9999" class="btn btn-primary" />
-        </div>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#mModal">Detalhes do Anúncio</button>
 
+        </div>
     </div>
+    <div class="modal fade" id="mModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                    <h4 class="modal-title text-center" style="color: blue">Marque um encontro! é Grátuito :)</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="content">
+                        <img src="~/Imagens/pinterestdoberman.jpg" alt="Car" style="width:100%">
+                        <h4>Nome do Cão: Rapariga</h4>
+                        <h4>Raça: São Bernardo</h4>
+                        <h4>Idade: 7 anos</h4>
+                        <h4>Vacina: Sim</h4>
+                        <h4>Porte: Grande</h4>
+                        <h4>Sexo: Macho</h4>
+                        <h4>Temperamento: Calmo</h4>
+                        <h4>Descrição: Prudente e Encantador rsrs.</h4>
+                        <h4>Nome do Dono: Edmilson</h4>
+                        <h4>Telefone: 8888-8888</h4>
+                        <h4>Endereço: Rua Benjamin</h4>
+                        <h4><iframe src="~/Imagens/Maps.png" frameborder="0" allowfullscreen style="width:100%"></iframe></h4>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 <!-- END GRID -->
+
 
 
 <script>
