@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "ExcluirPet";
+}
+
+<h2>Excluir Pet</h2>
+
+
+<form method="post">
+
+    <input type="hidden" name="PetID" value="@Model.PetId" />
+
+    <p>
+        Nome do Pet
+        @Model.NomedoPet
+    </p>
+
+    <p>
+        Raça
+        @Model.Raca
+    </p>
+
+    <p>
+        Idade
+        @Model.Idade
+    </p>
+
+    <p>
+        Sexo
+        @Model.Sexo
+    </p>
+
+    <p>
+        Nome do Dono
+        @Model.NomeDono
+    </p>
+
+    <p>
+        Endereço
+        @Model.Endereco
+    </p>
+    <input type="submit" value="Gravar" class="btn-danger" />
+
+</form>

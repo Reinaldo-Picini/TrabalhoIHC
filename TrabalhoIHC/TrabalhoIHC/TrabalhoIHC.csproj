@@ -93,10 +93,13 @@
     <Content Include="Global.asax" />
     <Content Include="Imagens\Boxer.jpg" />
     <Content Include="Imagens\BullDog.jpg" />
+    <Content Include="Imagens\cho.jpg" />
     <Content Include="Imagens\Chow-Chow.jpg" />
     <Content Include="Imagens\Doberman.jpg" />
+    <Content Include="Imagens\dogs.jpg" />
     <Content Include="Imagens\dogss.jpg" />
     <Content Include="Imagens\malamutedoalasca.jpg" />
+    <Content Include="Imagens\Pastor de Shetland.jpg" />
     <Content Include="Imagens\pinterestdoberman.jpg" />
     <Content Include="Imagens\poodle.jpg" />
     <Content Include="Imagens\Saluki.jpg" />
@@ -138,6 +141,8 @@
     <Content Include="Views\Usuario\Logar.cshtml" />
     <Content Include="Views\Home\Ajuda.cshtml" />
     <Content Include="Views\Pet\CadPet.cshtml" />
+    <Content Include="Views\Pet\AlterarPet.cshtml" />
+    <Content Include="Views\Pet\ExcluirPet.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

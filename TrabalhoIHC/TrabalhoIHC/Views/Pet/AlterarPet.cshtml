@@ -1,0 +1,49 @@
+﻿@model TrabalhoIHC.Models.Pet
+@{
+    ViewBag.Title = "AlterarPet";
+}
+
+<h2>AlterarPet</h2>
+
+
+<h2>Alterar</h2>
+
+@if (TempData["Mensagem"] != null)
+{
+    <div class="alert alert-danger" role="alert">@TempData["Mensagem"]</div>
+}
+
+<form method="post">
+    <input type="hidden" name="PetId" value="@Model.PetId" />
+
+    <p>
+        <label> Nome Do Pet:</label>
+        <input type="text" name="NomedoPet" value="@Model.NomedoPet" />
+    </p>
+
+    <p>
+        Raça:
+        <input type="text" name="Raça" value="@Model.Raca " />
+    </p>
+    <p>
+        Idade:
+        <input type="text" name="Idade" value="@Model.Idade " />
+    </p>
+    <p>
+        Sexo:
+        <input type="text" name="Sexo" value="@Model.Sexo " />
+    </p>
+    <p>
+        Nome do Dono:
+        <input type="text" name="NomeDono" value="@Model.NomeDono " />
+    </p>
+    <p>
+        Endereço:
+        <input type="text" name="Endereço" value="@Model.Endereco" class="form-control" />
+    </p>
+
+    <input type="submit" value="Gravar" class="btn-success" />
+
+
+
+</form>
